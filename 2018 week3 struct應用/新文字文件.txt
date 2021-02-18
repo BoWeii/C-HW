@@ -1,0 +1,37 @@
+is 100 10 1 5
+iw sword 2
+im 0700 10 15 10 7
+im 0006 10 8 4 3
+d
+im 8571 20 10 10 5
+iw bow 10
+im 0006 8 7 6 5
+start
+im 0007 10 8 4 3
+equip bow
+d
+a 0006
+equip sword
+a 0006 
+m 10 5
+m 4 3
+m 4 4
+a 0700
+d
+a 0006
+m 8 4
+a 8571
+m 9 4
+a 8571
+m 10 6
+a 0700
+d
+a 0000
+a 0700
+a 8571
+
+is 50 0 0 0
+im 50 1 1 1 1
+start
+m 1 0
+a 0050

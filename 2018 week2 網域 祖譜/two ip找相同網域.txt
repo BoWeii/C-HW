@@ -1,0 +1,50 @@
+(使用C) 
+電腦在網際網路的 ip 位址是由四個正整數 (0~255)組成，中間以據點隔開，例如: 
+
+140.124.1.255 
+
+為了方便記憶，可以取一個暱稱。 
+同一個網段的網址，第一個和第二個正整數相同。 
+
+請撰寫程式處理一串網址，辨識是否在同一個網段。 
+
+輸入說明: 
+------------- 
+每一筆是一個網址，加上其暱稱，中間以逗號間隔。 
+0.0.0.0,none 為結束輸入符號。 
+
+輸出說明: 
+---------- 
+以暱稱顯示所有同網段的電腦， 
+印出的順序為輸入順序，其格式為 
+
+machines [暱稱 1] and [暱稱 2] are on the same local network. 
+
+若有三個相同(依此類推)，其格式為 
+machines [暱稱 1], [暱稱 2] and [暱稱 3] are on the same local network. 
+
+若有不合法的網址輸入 (任一數字>255)，輸出錯誤訊息置於最後， 
+每一個錯誤 ip 輸出一行，輸出的順序同輸入順序，其格式為 
+
+machine [暱稱] is error ip 
+
+Sample Input: 
+------------------------ 
+111.22.3.44,blue 
+55.66.7.88,red 
+111.22.55.55,black 
+111.2.5.66,green 
+555.66.1.2,John 
+111.22.1.1,Tom 
+55.66.11.22,Mary 
+1111.1.1.1,Ken 
+0.0.0.0,none 
+
+Sample Output: 
+--------------------- 
+machines blue, black and Tom are on the same local network. 
+machines red and Mary are on the same local network. 
+machine John is error ip 
+machine Ken is error ip
+繳交作業 
+

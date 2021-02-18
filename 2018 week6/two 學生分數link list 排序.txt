@@ -1,0 +1,70 @@
+Link List 分數(迴圈) 
+
+#include 
+typedef struct { 
+int id;//學號 
+int score;//分數 
+} student_t; 
+
+typedef struct node { 
+student_t data; 
+struct node *next; 
+} node_t; 
+typedef node_t * nodep_t; 
+
+(1) void printList(nodep_t p);// 印出 List 內容 
+(2) void insertInOrder(nodep_t *p, student_t data);// 加入之後的LIST排序是由分數小到大的順序 
+(3) void deleteStudent(nodep_t *p, int id);// 刪除特定學號的資料 
+
+------------------ 
+輸入說明： 
+
+1. 輸入 p 表示印出 List 內容 。 
+2. 輸入 i 表示加入一筆資料，接著輸入學號、分數，以逗號隔開，中間沒有空白 。 
+3. 輸入 d 表示刪除特定學生，接著輸入學號 。 
+4. 輸入 e 結束程式。 
+
+----------------- 
+輸出說明： 
+
+p (印出): 
+1. list 空的，印出 null。 
+2. list 內有元素，按照分數排列，印出學號、分數，中間以逗號間隔。 
+3. 分數相同則學號小的在前。 
+
+----------------- 
+Sample Input: 
+
+p //輸出list 
+i //輸入 
+1,2 //輸入學生ID 以及 分數 
+p //列印 此時應該會顯示1,2 
+i 
+3,0 
+p 
+i 
+2,99 
+p 
+i 
+0,99 
+p 
+i 
+7,99 
+p 
+d //刪除 
+2 //刪除學生ID為2的學生 
+p //輸出，學生ID為2的學生不在List裡面 
+e 
+
+---------------------- 
+Sample Output: 
+
+null //List裡面沒有資料 
+1,2 
+3,0,1,2 //學生ID 3 分數為0 , 學生ID 1 分數為2 
+3,0,1,2,2,99 
+3,0,1,2,0,99,2,99 
+3,0,1,2,0,99,2,99,7,99 
+3,0,1,2,0,99,7,99 //學生2被刪除
+
+

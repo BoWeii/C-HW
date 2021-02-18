@@ -1,0 +1,27 @@
+026. 
+論文檢測 
+
+為了檢查兩篇論文是否有抄襲的可能性，因此需要一個論文檢測的工具。給予兩篇文章，將兩篇文章中相同的部分輸出，輸出重複的長度最多的部分，最後輸出相似度。 
+
+------------------------------------------------------------------------------- 
+輸入說明 
+1.輸入第一段文章。 
+2.輸入第二段文章。 
+------------------------------------------------------------------------------- 
+輸出說明 
+輸出重複的長度最多的部分。 
+最後輸出相似度。(重複的長度/第一篇文章的長度，標點符號不列入長度，化簡到最簡分數) 
+------------------------------------------------------------------------------- 
+Sample Input 
+
+第一行:Artificial intelligence is intelligence demonstrated by machines. In computer science AI research is defined as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals. 
+第二行:In computer science AI research is really important, it is intelligence demonstrated by machines. 
+------------------------------------------------------------------------------- 
+Sample Output 
+
+In computer science AI research is 
+3/19 
+------------------------------------------------------------------------------- 
+
+繳交作業 
+

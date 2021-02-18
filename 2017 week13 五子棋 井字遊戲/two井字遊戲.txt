@@ -1,0 +1,95 @@
+井字遊戲 
+---------------- 
+輸入說明: 
+
+第 1 行: 
+輸入誰先下，1 代表 Computer，0 代表 Player。 
+
+
+第 2 行~第 N 行: 
+
+第一種情況:兩個 0, 1, 2 數字 
+分別輸入 Computer 和 Player 的座標，直到一方贏才停止。 
+
+第二種情況: 
+w: 輸出所有Computer可能贏的座標，若沒有答案則輸出 no 
+
+d: 輸出 Computer 或 player 即將要贏，若沒有答案則輸出 no 
+
+
+座標位置如下: 
+00 | 01 | 02 | 
+-------------- 
+10 | 11 | 12 | 
+-------------- 
+20 | 21 | 22 | 
+-------------- 
+
+------------------------------ 
+輸出說明: 
+(1) 
+一旦有一方贏，要顯示是 Computer 或 Player贏。 
+若為 Computer 贏， 輸出 Computer win 
+若為 Player 贏， 輸出 Player win 
+若為平手，輸出fair 
+
+(2) 
+有座標重複輸入時，輸出 input error 
+
+(3) 輸入 w 
+輸出所有Computer可能贏的座標 
+    
+(4) 輸入 d 
+輸出誰即將贏與贏的座標 
+Player will win with (x, y) 
+Computer will win with (x, y) 
+
+------------------- 
+輸入範例說明 
+1 (Computer先下) 
+0 0 
+1 1 
+0 2 
+d (顯示誰即將贏) 
+0 2 (已重複，要輸出ERROR) 
+2 2 
+2 0 
+w (顯示所有Computer可能贏的座標) 
+1 0 
+0 1 
+---------------------- 
+輸出範例說明 
+Computer will win with (0, 1) (Computer可能贏) 
+input error 
+Computer will win with (0, 1) (Computer可能贏的第一個座標) 
+Computer will win with (1, 0) (Computer可能贏的第二個座標) 
+Computer win 
+
+------------------- 
+
+Sample Input 
+
+1 
+0 0 
+1 1 
+0 2 
+d 
+0 2 
+2 2 
+2 0 
+w 
+1 0 
+0 1 
+
+------------------- 
+
+Sample Output 
+
+Computer will win with (0, 1) 
+input error 
+Computer will win with (0, 1) 
+Computer will win with (1, 0) 
+Computer win
+
+
+上一頁

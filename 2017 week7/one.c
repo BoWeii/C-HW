@@ -1,0 +1,119 @@
+#include<stdio.h>
+int main()
+{   int a,b,d,f,g,z,x,k; int c=1;int e=1;int space;
+    scanf("%d",&a);
+    if(a==1)
+    {
+      scanf("%d",&b);
+      d=(b+1)/2;
+      for(c;c<=d;c++)
+      {
+          for(e;e<=c;e++)
+          {
+              printf("*");
+          }
+          e=1;
+          printf("\n");
+      }
+      e=1;c=1;
+      f=b-d;
+      for(f;f>=e;f--)
+      {
+          for(c;c<=f;c++)
+          {
+              printf("*");
+          }
+          c=1;
+          printf("\n");
+      }
+    }
+    /////////////////////////////////////////////
+    else if(a==2)
+    {
+       scanf("%d",&b);
+      d=(b+1)/2;
+      space=b/2;
+      for(e;e<=d;e++)
+      {
+          for(c;c<=space;c++)
+          {
+              printf(".");
+          }
+          c=1;
+          for(c;c<=e;c++)
+          {
+              printf("*");
+          }
+          printf("\n");
+          space-=1;
+          c=1;
+      }
+      f=b-d;
+      e=1;c=1;
+      space=1;
+
+         e=1;
+         g=f;
+         for(g;g>=e;g--)
+         {
+             for(e;e<=space;e++)
+             {
+                  printf(".");
+             }
+             e=1;
+             space+=1;
+
+
+             f=g;
+             for(f;f>=1;f--)
+             {
+                printf("*");
+             }
+                printf("\n");}
+      }
+
+//////////////////////////////////
+    else if(a==3)
+    {
+        scanf("%d",&b);
+        d=(b+1)/2;
+        z=b/2;
+        for(c;c<=d;c++)
+        {
+            for(e;e<=z;e++)
+            {
+                printf(".");
+            }
+            e=1;
+            z-=1;
+            x=c*2-1;
+            for(x;x>=1;x--)
+            {
+                printf("*");
+            }
+            printf("\n");
+        }
+        x=2*c-5
+        ;
+        c=1;e=1;
+        f=b-d;
+        for(e;e<=f;e++)
+        {
+            for(c;c<=e;c++)
+            {
+                printf(".");
+            }
+            c=1;
+            k=x;
+            for(k;k>=1;k--)
+            {
+                printf("*");
+            }
+             printf("\n");
+             x-=2;
+         }
+
+
+return 0;
+}
+}

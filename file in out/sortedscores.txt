@@ -1,0 +1,11 @@
+ID          NAME    Score
+S1063078   Fuckyou  10
+S1063079   GODshit  15
+S1063076      DoLL  31
+S1063075     CANDY  42
+S1063074       BOB  50
+S1063080     Tzuyu  69
+S1063073   APPLE01  70
+S1063082      Momo  72
+S1063081    Nayeon  80
+S1063077   Eve5566  90

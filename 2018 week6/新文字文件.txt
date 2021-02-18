@@ -1,0 +1,54 @@
+      
+
+A	p(1)=$1^2=1$\\
+B: p(1)=1(1+1)(2+1)/6=1\\
+C:assume all postive interge n in p(n) $1^2+2^2+....+n^2=(n+(n+1)(2n+1))/6 $ is true\\
+D:p(n+1)=$1^2+2^2+...+n^2+(n+1)^2=((n+1)(n+2)(2n+3))/6$
+E:p(n+1)=$(n(n+1)(2n+1))/6+(n+1)^2=1^2+2^2+....+n^2+(n+1)^2=(n(n+1)(2n+1)+6(n+1)^2)/6=((n+1)(2n^2+7n+6))/6=((n+1)(n+2)(2n+3))/6=p(n+1)$\\
+F:we have completed both the basis step ,so by the principle of mathmatical induction,the statement is true for every positive integer n
+
+
+        Basis step n=0 , $3*5^0=3=3(5^(0+1)-1)/4$\\
+          Induction step:let p(k),p(k+1)=true\\
+         p(k+1)=$3(5^(k+1)-1)/4+3*5^(k+1)$=$3((5^(k+1)-1)/4+5^(k+1))$=$3((5^(k+1)-1)/4+4*5^(k+1)/4)$=$3/4(5^(k+1)-1+4*5^(k+1))$=$3/4(5*5^(k+1)-4)=3*(5^((k+1)+1)-1)/4$\\
+  p(k+1) is also tru
+
+
+
+
+
+
+
+ A: p(8) =3cent + 5cent , p(9)=3cent*3 , p(10)=5cent*2\\
+	B: we can proof p(8),p(9),p(10) is true by using 3cent and 5cent stamps \\
+         C:proof n+1 can used by 3cent and 5cent\\
+      D:assume k=10, we need to show taht p(k+1) is true, first we know p(k-2) is true,then we can put one more 3cent stamp on the envelope,and we have formed k+1 cent of postage,as we desired\\
+      E:we have completed both the basis step and inductive step , so by principle of strong induction,the statement is true for every integer n>=8\\
+
+
+
+
+A:4x+8y=z(x>=0,y>=0),z=...22,23,24,26,27,28,30,31,32....\\
+           B: to proof that n cent can be formed by using 4cent and 11cent  while n>30\\
+              Basis step: n=30, p(30) is true because 2*11+2*4=30\\
+             Inductive step:k=30, p(k)=true and p(k+1)=true  , 31=27+4 (27=11*1+4*4),by the principle of mathmatical induction,p(n) is true for all positive integer n\\
+       C: a postage n cent can be formed by using 4cent and 11cent stamp while n>=30\\
+          Basis step:n=30,n=31,n=32,n=33   p(30)is true (2*11+*2*4=30),p(31)=(1*11+5*4=30),p(32)=(8*4=32),p(33)=(3*11=33)\\
+          inductive step:p(30),p(31),p(32),p(33) are all true,so all postage from 30 to k cnet can be formed using 11cent and 4cent stamps\\
+        while k>=33 , p(k+1) is true because p(k-3) is true (k-3 +4cent=k+1) ,so by principle of strong induction,p(n) is true for all positive integer n while n >=30\\ 
+
+f(2)=f(1)+2=3+2=5\\	
+f(3)=f(2)+2=5+2=7\\
+f(4)=f(3)+2=7+2=9\\
+(b):f(1)=3f(0)=3(1)=3\\
+f(2)=3f(1)=3(3)=9\\
+f(3)=3f(2)=3(9)=27\\
+f(4)=3f(3)=3(27)=81\\
+(c):$f(1)=2^f(0)$=$2^1=2$\\
+$f(2)=2^f(1)$=$2^2=4$\\
+$f(3)=2^f(2)$=$2^4=16$\\
+$f(4)=2^f(3)$=$2^16=65536$\\
+(d):f(1)=f(0)^2+f(0)+1=1+1+1=3\\
+$f(2)=f(1)^2$+f(1)+1=9+3+1=13\\
+$f(3)=f(2)^2$+f(2)+1=169+13+1=183\\
+$f(4)=f(3)^2$+f(3)+1=33489+183+1=33673\\

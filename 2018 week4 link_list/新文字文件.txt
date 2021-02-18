@@ -1,0 +1,30 @@
+3
+CCCCC 003 F
+AAAAA 003 F
+AAAAA 001 M
+BBBBB 002 M
+l
+f 003
+i DD 004 F
+l
+d 001
+l
+m 001 f 001 m
+m 002 Bb 002 m
+f 002
+l
+q
+
+3
+AA 001 M
+BB 001 M
+CC 002 M
+BB 003 F
+1
+
+2
+Lucas 001 M
+Kuo 002 M
+i Lin 003 F
+l
+q
